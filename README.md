@@ -6,5 +6,8 @@
 [![Actions Status](https://github.com/danitorres13/python-project-140/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/danitorres13/python-project-140/actions)
 
 
-## Ver Demo
+## Ver Demo brain-even
 https://youtu.be/rpdjZxYJS9E
+
+## Ver Demo brain-calc
+https://youtu.be/Sc7g7h6ttYg

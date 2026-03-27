@@ -1,0 +1,19 @@
+import random
+
+
+def generate_round():
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    symbol = random.choice(["+", "-", "*"])
+
+    question = f"{num1} {symbol} {num2}"
+
+    if symbol == "+":
+        correct_answer = num1 + num2
+    elif symbol == "-":
+        correct_answer = num1 - num2
+    else:
+        correct_answer = num1 * num2
+
+    return question, str(correct_answer)
+
