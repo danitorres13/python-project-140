@@ -11,3 +11,6 @@ https://youtu.be/rpdjZxYJS9E
 
 ## Ver Demo brain-calc
 https://youtu.be/Sc7g7h6ttYg
+
+## Ver Demo brain-gcd
+https://youtu.be/PIfPFMuMOfA
