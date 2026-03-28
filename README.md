@@ -14,3 +14,6 @@ https://youtu.be/Sc7g7h6ttYg
 
 ## Ver Demo brain-gcd
 https://youtu.be/PIfPFMuMOfA
+
+## Ver Demo brain-progression
+https://youtu.be/PL6qjFAG8gM
