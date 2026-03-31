@@ -1,14 +1,24 @@
-from brain_games.engine import run_game
 import random
-
-
-def generate_round():
-    num = random.randint(1, 100)
-    question = str(num)
-    correct_answer = "yes" if num % 2 == 0 else "no"
-    return question, correct_answer
+import prompt
+from brain_games.cli import welcome_user
 
 
 def main():
-    rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-    run_game(generate_round, rules)
+    name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+    for _ in range(3):
+        num = random.randint(1, 100)
+        print(f"Question: {num}")
+        answer = prompt.string("Your answer: ")
+
+        correct_answer = "yes" if num % 2 == 0 else "no"
+
+        if answer == correct_answer:
+            print("Correct!")
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            return
+
+    print(f"Congratulations, {name}!")
