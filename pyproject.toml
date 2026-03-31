@@ -2,7 +2,9 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "CLI math games"
-authors = ["Daniel Torres"]
+authors = [
+  { name = "Daniel Torres" }
+]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
