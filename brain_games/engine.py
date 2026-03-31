@@ -10,7 +10,8 @@ def run_game(game_logic, rules):
         question, correct_answer = game_logic()
 
         print(f"Question: {question}")
-        answer = prompt.string("Your answer: ")
+        print("Your answer: ", end="")
+        answer = prompt.string()
 
         if answer == correct_answer:
             print("Correct!")
