@@ -22,4 +22,4 @@ def generate_round():
     else:
         correct_answer = "no"
 
-    return question, correct_answer
+    return question, str(correct_answer)
