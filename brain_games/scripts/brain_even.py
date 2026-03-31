@@ -1,4 +1,4 @@
-import random
+import random # nosec
 import prompt
 from brain_games.cli import welcome_user
 

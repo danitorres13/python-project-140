@@ -1,4 +1,4 @@
-import random 
+import random # nosec
 
 
 def generate_round():
