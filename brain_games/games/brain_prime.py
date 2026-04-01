@@ -1,4 +1,4 @@
-import random # nosec
+import random  # nosec
 
 
 def is_prime(num):

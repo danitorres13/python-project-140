@@ -1,5 +1,5 @@
-import random # nosec
-import math # nosec
+import random  # nosec
+import math  # nosec
 
 
 def generate_round():
