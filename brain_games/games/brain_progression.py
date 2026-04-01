@@ -2,8 +2,8 @@ import random  # nosec
 
 
 def generate_round():
-    start = random.randint(1, 50)
-    step = random.randint(1, 10)
+    start = random.randint(1, 50)  # Sensitive
+    step = random.randint(1, 10)  # Sensitive
     length = 10
 
     progression = []
@@ -11,7 +11,7 @@ def generate_round():
     for i in range(length):
         progression.append(start + i * step)
 
-    hidden_index = random.randint(0, length - 1)
+    hidden_index = random.randint(0, length - 1)  # Sensitive
     correct_answer = progression[hidden_index]
 
     progression[hidden_index] = ".."

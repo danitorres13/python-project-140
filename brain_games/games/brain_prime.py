@@ -1,4 +1,4 @@
-import random  # nosec
+import random
 
 
 def is_prime(num):
@@ -13,7 +13,7 @@ def is_prime(num):
 
 
 def generate_round():
-    num = random.randint(1, 100)
+    num = random.randint(1, 100)  # Sensitive
 
     question = str(num)
 
