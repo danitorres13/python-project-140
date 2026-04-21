@@ -6,7 +6,8 @@ def run_game(game_logic, rules):
     name = welcome_user()
     print(rules)
 
-    for _ in range(3):
+    ROUNDS_COUNT = 3
+    for _ in range(ROUNDS_COUNT):
         question, correct_answer = game_logic()
 
         print(f"Question: {question}")

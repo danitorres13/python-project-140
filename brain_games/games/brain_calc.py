@@ -1,10 +1,14 @@
-import random  
+import random
+
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+OPERATORS = ["+", "-", "*"]
 
 
 def generate_round():
-    num1 = random.randint(1, 100)  # Sensitive
-    num2 = random.randint(1, 100)  # Sensitive 
-    symbol = random.choice(["+", "-", "*"])  # Sensitive
+    num1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    symbol = random.choice(OPERATORS)
 
     question = f"{num1} {symbol} {num2}"
 
@@ -16,4 +20,3 @@ def generate_round():
         correct_answer = num1 * num2
 
     return question, str(correct_answer)
-

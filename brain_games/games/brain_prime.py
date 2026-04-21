@@ -1,5 +1,8 @@
 import random
 
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
 
 def is_prime(num):
     if num < 2:
@@ -13,13 +16,9 @@ def is_prime(num):
 
 
 def generate_round():
-    num = random.randint(1, 100)  # Sensitive
+    num = random.randint(MIN_NUMBER, MAX_NUMBER)
 
     question = str(num)
+    correct_answer = "yes" if is_prime(num) else "no"
 
-    if is_prime(num):
-        correct_answer = "yes"
-    else:
-        correct_answer = "no"
-
-    return question, str(correct_answer)
+    return question, correct_answer
